@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} Books {% endblock %}</h1>
+    {% for record in records %}
+        <div class='record'>
+            <h3>#{{ record[0] }} - {{ record[1] }} BY {{ record[2] }}</h3>
+            <i><p>({{ record[3] }} pages)</p></i>
+            <p class='review'>{{ record[4] }}</p>
+            <i><p>Added {{ record[5] }}</p></i>
+        </div>
+    {% endfor %}
+{% endblock %}
