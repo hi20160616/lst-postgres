@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center" style="user-select: auto;">
+    <h1 class="display-4" style="user-select: auto;">{% block title %} Data Table {% endblock %}</h1>
+    <!-- <p class="lead" style="user-select: auto;">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p> -->
+</div>
+
+<div class="container">
+    <table class="table">
+	<thead>
+	    <tr>
+		<th scope="col">#</th>
+		<th scope="col">City</th>
+		<th scope="col">Temp Low</th>
+		<th scope="col">Temp Hight</th>
+		<th scope="col">PRCP</th>
+		<th scope="col">Date</th>
+	    </tr>
+	</thead>
+	<tbody>
+	    {% for record in records %}
+	    <tr>
+		<th scope="row">{{loop.index}}</th>
+		<td>{{record[0]}}</td>
+		<td>{{record[1]}}</td>
+		<td>{{record[2]}}</td>
+		<td>{{record[3]}}</td>
+		<td><span class="badge bg-dark">12:33</span><span class="badge bg-light text-dark">{{record[4]}}</span></td>
+	    </tr>
+	    {% endfor %}
+	</tbody>
+    </table>
+</div>
+{% endblock %}

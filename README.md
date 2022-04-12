@@ -32,3 +32,8 @@ mydb=#
 ```
 sudo docker exec -u postgres -it some-postgres psql mydb
 ```
+```
+export FLASK_APP=flaskr
+export FLASK_ENV=development
+flask run
+```

@@ -1,0 +1,40 @@
+.bd-example {
+  padding: 1.5rem;
+  margin-right: 0;
+  margin-left: 0;
+  border-width: 1px;
+  border-top-left-radius: .25rem;
+  border-top-right-radius: .25rem;
+}
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+}
+.figure {
+  display: inline-block;
+}
+figure {
+  margin: 0 0 1rem;
+    /* margin-bottom: 1rem; */
+}
+.figure-img {
+  margin-bottom: .5rem;
+  line-height: 1;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+.rounded {
+  border-radius: .25rem !important;
+}
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+table.table td a:visited{
+    color: darkgray;
+}
