@@ -4,7 +4,6 @@ from setuptools import setup
 setup(
     name="List Postgres",
     install_requires=[
-        "Flask >= 2.0"
         "Werkzeug >= 2.0",
         "Jinja2 >= 3.0",
         "itsdangerous >= 2.0",
