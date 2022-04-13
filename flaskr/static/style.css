@@ -6,6 +6,9 @@
   border-top-left-radius: .25rem;
   border-top-right-radius: .25rem;
 }
+.bd-example a{
+  display: inline-block;
+}
 .bd-placeholder-img {
   font-size: 1.125rem;
   text-anchor: middle;
