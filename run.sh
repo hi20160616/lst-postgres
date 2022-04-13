@@ -1,3 +1,2 @@
 . venv/bin/activate
-export FLASK_APP=flaskr
-flask run
+sudo waitress-serve --port=80 --call 'flaskr:create_app'
